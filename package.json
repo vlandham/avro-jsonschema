@@ -1,0 +1,35 @@
+{
+  "name": "avro-jsonschema",
+  "version": "0.0.1",
+  "description": "Convert Avro JSON schema to JSON Schema",
+  "source": "index.js",
+  "main": "dist/index.js",
+  "umd:main": "dist/index.umd.js",
+  "unpkg": "dist/index.umd.js",
+  "module": "dist/index.m.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "dev": "microbundle watch",
+    "test": "microbundle --external=none && tape test/*.js",
+    "release": "microbundle --external=none && standard-version"
+  },
+  "keywords": [
+    "avro"
+  ],
+  "files": [
+    "index.js",
+    "dist"
+  ],
+  "author": "Jim Vallandingham",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^5.13.0",
+    "microbundle": "^0.9.0",
+    "prettier": "^1.16.4",
+    "standard-version": "^4.4.0",
+    "tape": "^4.10.0"
+  }
+}
